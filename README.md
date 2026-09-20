@@ -1,28 +1,42 @@
 ## Aayan Alam
 
-Software engineer in Islamabad. I work on backend and distributed systems at
-Carbonteq, and I have a background in embedded firmware and RISC-V hardware.
+Software engineer in Islamabad. I build backend and distributed systems at
+Carbonteq, and I came to it from firmware for industrial machines. The work I like
+most sits where software meets hardware.
 
-Currently building a benchmark of injected bugs in a RISC-V pipeline, to measure
-how well LLM agents localize and repair them when they can run a simulator.
+Most of my day to day work lives in private repositories. The public ones below
+are the projects I own.
 
-**Hardware**
+### Projects
 
-- [ChameleonSoC](https://github.com/aayanalam2/ChameleonSoC): an RV32I core that
-  loads bitstreams into an OpenFPGA-generated eFPGA fabric over Wishbone and
-  reconfigures it at run time, verified in simulation.
+**[ChameleonSoC](https://github.com/aayanalam2/ChameleonSoC)** ·
+Verilog, RISC-V, OpenFPGA
+An RV32I core that loads a bitstream into an embedded FPGA fabric over Wishbone,
+checks it, and reconfigures the fabric at run time. Verified in simulation, with
+100 of 100 fabric tests passing.
 
-**Software**
+**[headless-dms](https://github.com/aayanalam2/headless-dms)** ·
+TypeScript, Effect, PostgreSQL, S3
+A document API with immutable versioning, built as a functional core with an
+imperative shell. Every upload is a new version, checksummed and validated.
 
-- [headless-dms](https://github.com/aayanalam2/headless-dms): a document API in
-  TypeScript with immutable versioning, built as a functional core with an
-  imperative shell, on PostgreSQL and S3.
-- [dns-client](https://github.com/aayanalam2/dns-client): a DNS client with no
-  dependencies outside the Node.js standard library, as a library, a CLI and a
-  web UI.
+**[dns-client](https://github.com/aayanalam2/dns-client)** · TypeScript
+A DNS client written against the wire format, with no dependencies outside the
+Node.js standard library. Ships as a library, a CLI and a web UI.
 
-Previously: industrial firmware at Cowlar (EtherCAT motion control, UL 60730
-aligned battery management), and an RTL internship analyzing the RISC-V BOOM
-pipeline.
+**[LaplaceVisualization](https://github.com/aayanalam2/LaplaceVisualization)** ·
+Python, PyQt5, Manim
+A GUI that animates solutions of the 2D Laplace equation computed with Jacobi
+iteration.
 
-aayanalam2@gmail.com | [LinkedIn](https://www.linkedin.com/in/aayan-alam/)
+### Background
+
+Industrial automation at Cowlar Design Studio (YC W17): EtherCAT multi-axis motion
+control, UL 60730 aligned battery management firmware, and the backend and CI/CD
+behind patented fiber-optics machines. Earlier, an internship analyzing the
+pipeline of the RISC-V BOOM core.
+
+BE in Electrical Engineering from NUST SEECS, second in a batch of over 100.
+
+aayanalam2@gmail.com ·
+[LinkedIn](https://www.linkedin.com/in/aayan-alam/)
